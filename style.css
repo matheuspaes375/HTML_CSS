@@ -1,0 +1,130 @@
+body {
+    background-color: black;
+    margin: 20px; /* Ajustado para usar margem única */
+    font-family: 'Arial', sans-serif; /* Fonte mais uniforme */
+}
+
+.titulo {
+    padding-top: 30px; /* Aumentei o padding-top */
+    color: #fff;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2em; /* Aumentei o tamanho da fonte */
+    text-transform: uppercase; /* Textos em maiúsculas */
+}
+
+.fonte {
+    color: #fff;
+    padding-top: 40px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-size: 1.2em; /* Tamanho da fonte ajustado */
+}
+
+header {
+    background-color: #4CAF50;
+    height: 100px; /* Aumentei a altura */
+    border-radius: 10px; /* Reduzi o border-radius */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adicionei sombra */
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px; /* Reduzi o padding-top */
+}
+
+button {
+    padding: 15px 35px;
+    border-radius: 30px; /* Reduzi o border-radius */
+    cursor: pointer;
+    border: none;
+    background-color: white;
+    color: #4CAF50; /* Adicionei cor ao texto */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    letter-spacing: 1px; /* Reduzi o espaçamento das letras */
+    text-transform: uppercase;
+    font-size: 14px; /* Reduzi o tamanho da fonte */
+    transition: all 0.3s ease; /* Reduzi o tempo de transição */
+}
+
+button:hover {
+    letter-spacing: 2px;
+    background-color: #4CAF50;
+    color: white;
+    box-shadow: 0 4px 16px rgba(76, 175, 80, 0.4); /* Sombra mais pronunciada */
+}
+
+button:active {
+    transform: translateY(5px); /* Reduzi o deslocamento */
+}
+
+.div01 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 15px; /* Reduzi o border-radius */
+    width: 90%; /* Aumentei a largura */
+    max-width: 600px; /* Aumentei o max-width */
+    margin: 30px auto; /* Adicionei margem superior */
+    padding: 25px; /* Aumentei o padding */
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo semi-transparente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adicionei sombra */
+}
+
+ol {
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    font-size: 18px; /* Aumentei o tamanho da fonte */
+    padding-left: 30px; /* Aumentei o padding-left */
+    line-height: 1.8; /* Aumentei o line-height */
+}
+
+footer {
+    background-color: #4CAF50;
+    height: 100px; /* Aumentei a altura */
+    border-radius: 10px; /* Reduzi o border-radius */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); /* Adicionei sombra */
+}
+
+.loader {
+    display: block;
+    --height-of-loader: 6px; /* Aumentei a altura */
+    --loader-color: #4CAF50;
+    width: 150px; /* Aumentei a largura */
+    height: var(--height-of-loader);
+    border-radius: 30px;
+    background-color: rgba(0,0,0,0.3); /* Aumentei a opacidade do fundo */
+    position: relative;
+}
+
+.loader::before {
+    content: "";
+    position: absolute;
+    background: var(--loader-color);
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-radius: 30px;
+    animation: moving 1.2s ease-in-out infinite; /* Ajustei a animação */
+}
+
+@keyframes moving {
+    50% {
+        width: 100%;
+    }
+
+    100% {
+        width: 0;
+        right: 0;
+        left: unset;
+    }
+}

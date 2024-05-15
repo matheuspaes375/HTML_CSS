@@ -1,36 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Site Dokkan Battle</title>
-    <link rel="stylesheet" href="site.css">
+    <title>Petshop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #2ecc71;
+            color: #ecf0f1;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        header {
+            width: 100%;
+            background-color: #27ae60;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .container {
+            padding: 20px;
+            max-width: 800px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .listaAnimais {
+            background-color: #27ae60;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        ol {
+            padding-left: 20px;
+        }
+        li {
+            padding: 10px 0;
+            border-bottom: 1px solid #1e8449;
+        }
+        li:last-child {
+            border-bottom: none;
+        }
+        .button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #16a085;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #1abc9c;
+        }
+        #botao1, #botao2 {
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #16a085;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        #botao2 {
+            display: none;
+        }
+        #botao1:hover, #botao2:hover {
+            background-color: #1abc9c;
+        }
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            color: #ecf0f1;
+        }
+    </style>
 </head>
-
 <body>
-
+    <header>
+        <h1>Petshop</h1>
+    </header>
     <div class="container">
-        <header>
-            <h1>Notícias do Dokkan Battle</h1>
-        </header>
-        <nav>
-            <p>Aqui estão as últimas notícias do Dokkan Battle:</p>
-        </nav>
-       <main> <img src="GJ1B5IebAAAnoz-.png" alt="" height="500px">
-        <ul class="noticias">
-            <li>Atualização chegou no dokkan!</li>
-            <li>Novos personagens sendo adicionados ao jogo.</li>
-            <li>Evento especial de DUAL DOKKAN FEST em andamento.</li>
-
-        </ul>
-        <video autoplay muted height="500"
-            src="_NEW_ DOKKAN FEST DRAGON FIST SSJ3 GOKU SUPER ATTACK & STANDBY ANIMATIONS! (DBZ_ Dokkan Battle).mp4"></video>
-        </main>
-        <footer>feito por Matheus Paes</footer>
-
+        <div class="listaAnimais">
+            <ol class="animal-list"></ol>
+        </div>
+        <button class="button">Cadastrar Animal</button>
+        <button id="botao1">Botão 1</button>
+        <button id="botao2">Botão 2</button>
     </div>
-
+    <footer>
+        <p>Matheus Paes</p>
+    </footer>
+    <script src="main.js"></script>
 </body>
-
 </html>
